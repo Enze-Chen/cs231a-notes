@@ -210,8 +210,8 @@ This can be formatted as a matrix-vector product shown below:
 P_1^T & 0^T & -u_1P_1^T \\
 0^T & P_1^T & -v_1P_1^T \\
 & \vdots &\\
-P_1^T & 0^T & -u_1P_1^T \\
-0^T & P_1^T & -v_1P_1^T 
+P_n^T & 0^T & -u_nP_n^T \\
+0^T & P_n^T & -v_nP_n^T 
 \end{bmatrix}
 \begin{bmatrix}
 m_1^T \\ m_2^T \\m_3^T
@@ -264,7 +264,7 @@ The extrinsics are
     r_1 &= \frac{a_2\times a_3}{\|a_2\times a_3\|}\\
     r_2 &= r_3\times r_1\\
     r_3 &= \pm \frac{ a_3}{\| a_3\|}\\
-    T &= \rho K^-1 b
+    T &= \rho K^{-1} b
 \end{aligned}\end{equation}
 We leave the derivations as a class exercise or you can refer to Section 1.3.1 of the Forsyth \& Ponce textbook.
 
